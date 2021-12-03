@@ -63,11 +63,15 @@ console.log(text);
 
 let z = 0; //break statement in console
 
-while (z < 6) {
-  if (z === 3) {
-    break;
-  }
-  z = z + 1;
+
+function loopy() {
+    while (z < 6) {
+    if (z === 3) {
+        break;
+    }
+    z = z + 1;
+    }
+    document.getElementById("while_loop").innerHTML = z;
 }
 
 console.log(z);
