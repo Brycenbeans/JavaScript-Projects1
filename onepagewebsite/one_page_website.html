@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+		<meta charset="utf-8">
+	</head>
+		<!-- NAVIGATION -->
+		<div>
+			<nav>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>CONTACT FORM</li></a>
+					<a href="#videos"><li>VIDEOS</li></a>
+				</ul>
+		</div>
+		<!-- END NAVIGATION -->
+		
+				<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<span>Home</span>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		<br>
+		<br>
+		<!-- GALLERY -->
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div class="row">
+					<div class="column">
+					  <img src="images/cat_1_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  <img src="images/cat_2_thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+				  </div>
+
+				  <div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+				  
+					  <div class="mySlides">
+						<div class="numbertext">1 / 2</div>
+						<img src="images/cat_1.png" style="width:100%">
+					  </div>
+				  
+					  <div class="mySlides">
+						<div class="numbertext">2 / 2</div>
+						<img src="images/cat_2.png" style="width:100%">
+					  </div>
+				  
+					  <!-- Next/previous controls -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				  
+					  <!-- Caption text -->
+					  <div class="caption-container">
+						<p id="caption"></p>
+					  </div>
+				  
+					  <!-- Thumbnail image controls -->
+					  <div class="column">
+						<img class="demo" src="images/cat_1_thumb.jpg" onclick="currentSlide(1)" alt="cat1">
+					  </div>
+				  
+					  <div class="column">
+						<img class="demo" src="images/cat_2_thumb.jpg" onclick="currentSlide(2)" alt="cat2">
+					  </div>
+					</div>
+				  </div>
+					<!-- END PHOTO CONTAINER 2 -->				
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+		<br>
+		<br>
+		<br>
+		<!-- VIDEOS -->
+		<div id="videos">
+			<div>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/W85oD8FEF78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- END VIDEOS -->
+		
+		<!-- SIGN UP -->
+		<section>
+			<div id="contact">
+				<div>
+					<h1> Sign-up<h1>
+					<div>
+						<h2><span>You like cats?</span>
+							<br />if you like them so much, sign up!
+						</h2>
+						<p>
+							Please tell us your contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SIGN UP -->
+		
+		<!-- FOOTER -->
+		
+		<f> cat boy industries &copy; </f>
+		
+		<!-- END FOOTER -->
+		
+		
+		
+</html>
